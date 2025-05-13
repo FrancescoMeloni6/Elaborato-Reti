@@ -1,0 +1,55 @@
+body {
+    font-family: 'Gill Sans';
+    margin: 1;
+    padding: 1;
+    background: #d0f0ac80;
+}
+
+header, nav, main {
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: #753ad4;
+}
+
+img.fade-in {
+    width: 50%;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.zoom-hover {
+    width: 20%;
+    transition: transform 0.4s ease;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+.zoom-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    img.fade-in {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
